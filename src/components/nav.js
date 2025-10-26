@@ -1,3 +1,6 @@
+import {displayHome} from "../pages/home.js";
+import {displayMenu} from "../pages/menu.js";
+
 function createNav() {
     const content = document.querySelector("#main");
     const nav = document.createElement("div");
@@ -17,6 +20,20 @@ function createNav() {
     nav.append(menu);
     nav.append(about);
     nav.append(contact);
+
+    home.addEventListener("click", () => {
+        const mainArea = document.querySelector("#content");
+        mainArea.remove();
+        displayHome();
+        // css style for :active?
+    });
+
+    menu.addEventListener("click", () => {
+        const mainArea = document.querySelector("#content");
+        mainArea.remove();
+        displayMenu();
+    });
+
 
     return nav;
 };
