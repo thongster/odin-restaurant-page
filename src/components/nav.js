@@ -1,5 +1,7 @@
 import {displayHome} from "../pages/home.js";
 import {displayMenu} from "../pages/menu.js";
+import {displayAbout} from "../pages/about.js";
+import {displayContact} from "../pages/contact.js";
 
 function createNav() {
     const content = document.querySelector("#main");
@@ -32,6 +34,19 @@ function createNav() {
         const mainArea = document.querySelector("#content");
         mainArea.remove();
         displayMenu();
+    });
+
+    about.addEventListener("click", () => {
+        const mainArea = document.querySelector("#content");
+        mainArea.remove();
+        displayAbout();
+        // css style for :active?
+    });
+
+    contact.addEventListener("click", () => {
+        const mainArea = document.querySelector("#content");
+        mainArea.remove();
+        displayContact();
     });
 
 
