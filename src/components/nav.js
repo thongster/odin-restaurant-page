@@ -1,5 +1,5 @@
 function createNav() {
-    const content = document.querySelector("#content");
+    const content = document.querySelector("#main");
     const nav = document.createElement("div");
     nav.classList.add("nav");
     const home = document.createElement("button");
@@ -17,6 +17,8 @@ function createNav() {
     nav.append(menu);
     nav.append(about);
     nav.append(contact);
+
+    return nav;
 };
 
 export {createNav};

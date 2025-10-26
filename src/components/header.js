@@ -14,6 +14,8 @@ function createHeader() {
     headerMain.append(headerLogo);
     headerMain.append(headerText);
     headerText.textContent = "sông & steam";
+
+    return headerMain;
 };
 
 export {createHeader};

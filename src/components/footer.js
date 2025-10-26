@@ -11,6 +11,7 @@ function createFooter() {
     body.append(footer);
     footer.append("Developed by Thongster | ")
     footer.append(sourceCode)
+    return footer;
 };
 
 export {createFooter};
