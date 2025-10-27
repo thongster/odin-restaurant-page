@@ -57,8 +57,7 @@ function displayAbout() {
 
     main.append(aboutContent);
     aboutContent.append(aboutInner);
-    aboutInner.append(aboutIntroHeading, aboutIntroParagraph,
-                        features,
+    aboutInner.append(aboutIntroHeading, aboutIntroParagraph, features,
                         ourStoryHeading, ourStoryParagraph, 
                         ourValuesHeading, ourValuesList);
     features.append(cardOne, cardTwo, cardThree);

@@ -1,5 +1,5 @@
 function createFooter() {
-    const body = document.querySelector("body");
+    const wrapper = document.querySelector("#wrapper");
     const footer = document.createElement("footer");
     const sourceCode = document.createElement("a");
     sourceCode.textContent = "Source Code";
@@ -8,7 +8,7 @@ function createFooter() {
     sourceCode.target = "_blank";
     sourceCode.rel = "noreferrer";
 
-    body.append(footer);
+    wrapper.append(footer);
     footer.append("Developed by Thongster | ")
     footer.append(sourceCode)
     return footer;
