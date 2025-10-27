@@ -37,7 +37,6 @@ body {
   flex-direction: column;
   height: 90vh;
   width: min(90vw, 1200px);
-  border: 1px solid blue;
   overflow: hidden;
   background-color: var(--main-bg-color);
   
@@ -77,6 +76,8 @@ header {
   flex: 1;
   display: flex;
   overflow: hidden;
+  height: 100%;
+  background-color: var(--main-bg-color);
 }
 
 .nav {
@@ -106,6 +107,8 @@ header {
   position: relative;
   width: 100%;
   overflow: auto;
+  height: 100%;
+  background-color: var(--main-bg-color);
 }
 
 .aboutInner {
@@ -157,6 +160,38 @@ header {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0.25px 0.25px 5px var(--accent-color);
+}
+
+.menuInner {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        to left,
+        rgba(247, 243, 238, 0.5),
+        rgba(247, 243, 238, 1)
+        ),
+        url(../images/menubackground.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 0 #f7f3ee;
+    padding: 3rem;
+    height: 100%;
+}
+
+.contactInner {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        to left,
+        rgba(247, 243, 238, 0.5),
+        rgba(247, 243, 238, 1)
+        ),
+        url(../images/contactbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 0 #f7f3ee;
+    padding: 3rem;
+    height: 100%;
 }
 
 footer { 
@@ -215,13 +250,25 @@ footer > a {
     padding: 0.5rem;
   }
 
+    .nav > button:hover,
+    .nav > button.active {
+        background: linear-gradient(to top, var(--main-bg-color), var(--secondary-bg-color));
+    }
+  
+  .aboutInner {
+    height: auto;
+  }
+  
+  .menuInner, .contactInner {
+    height: 100%;
+  }
+
   .features {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
   }
-
 
   .card > img {
     max-width: 200px;
