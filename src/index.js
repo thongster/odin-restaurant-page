@@ -1,5 +1,11 @@
-import "./styles.css";
+import "./../node_modules/modern-normalize/modern-normalize.css";
+import "./assets/styles/styles.css";
+import {createHeader} from "./components/header.js";
+import {createNav} from "./components/nav.js";
+import {createFooter} from "./components/footer.js";
+import {displayHome} from "./pages/home.js";
 
-console.log("test")
-console.log("test")
-console.log("test")
+createHeader();
+createNav();
+createFooter();
+displayHome();
