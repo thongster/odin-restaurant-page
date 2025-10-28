@@ -188,7 +188,7 @@ header {
     background-position: center;
     text-shadow: 1px 1px 0 #f7f3ee;
     padding: 3rem;
-    height: 100%;
+    height: minmax(100%, auto);
 }
 
 .menuDisplay {
@@ -249,7 +249,7 @@ header {
     background-position: center;
     text-shadow: 1px 1px 0 #f7f3ee;
     padding: 3rem;
-    height: 100%;
+    height: minmax(100%, auto);
 }
 
 .contactInner > form {
